@@ -7,6 +7,14 @@ body, html{
     overflow-x: hidden;
 }
 
+html{
+    min-height: 100vh;
+}
+body{
+    height: 100vh;
+    font-size: 14px;
+    color: #73879C;
+}
 
 h1,
 h2,
@@ -15,6 +23,7 @@ h4,
 h5,
 h6 {
     margin-bottom: 15px;
+    color: rgb(9 37 64);
    
 }
 
@@ -95,29 +104,40 @@ h5,
 }
 
 .btn {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.07em;
-    padding: 10px 20px;
+    padding: 12px 25px;
+    border-radius: 4px;
 }
 
 .form-control {
-    border-radius: 6px;
+    border-radius: 8px;
+    font-size: 15px;
+}
+.form-control.form-control-lg{
+    font-size: 17px;
+    min-height: 55px;
 }
 
-
 .btn-primary {
-    background-color: #ff7a1a !important;
-    border-color: #ff7a1a !important;
+    background-color: #00b9ff !important;
+    border-color: #00b9ff !important;
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-    background-color: #f48d43 !important;
-    border-color: #f48d43 !important;
+    background-color: #29c2f9 !important;
+    border-color: #29c2f9 !important;
 }
-
+.formGroup{
+    margin-bottom: 15px;
+}
+.singleFold{
+    min-height: 100vh;
+    padding: 30px 0;
+}
 
 
 @media (max-width: 1199.98px) {
