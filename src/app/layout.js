@@ -3,9 +3,7 @@ import { Poppins } from "next/font/google";
 import "@/assets/css/bootstrap.css"
 import "@/assets/css/style.css"
 import "@/assets/css/google-icons.css"
-import Sidebar from "@/layout/Sidebar"
-import Header from "@/layout/Header";
-import Footer from "@/layout/Footer";
+import Layoutauth from "@/utils/Layoutauth";
 
 
 const poppins = Poppins({
@@ -27,10 +25,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={poppins.className}>
         
-        <Header/>
-        <Sidebar/>
-        <Footer/>
-        {children}
+       <Layoutauth data={children}/>
+      
       </body>
     </html>
   );

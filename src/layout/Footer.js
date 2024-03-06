@@ -1,13 +1,15 @@
-'use client'
 import React from 'react'
-import { usePathname } from 'next/navigation'
 
 export default function Footer() {
-  const pathname = usePathname()
-  return pathname !== '/login' && (
+
+  return (
     <>
-    {console.log(pathname)}
-      Foter
+
+      <footer className='text-end'>
+        <div className='container-fluid'>
+          <p className='mb-0'>A Synergy Healthcare Services (UK) Product | Developed by SkyNet | logo Copyright © 2024 PTS*</p>
+        </div>
+      </footer>
     </>
   )
 }
