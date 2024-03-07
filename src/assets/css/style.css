@@ -72,6 +72,11 @@ h5,
     font-size: 16px;
 }
 
+h6,
+.h6 {
+    font-size: 14px;
+}
+
 .mb-05 {
     margin-bottom: 5px !important;
 }
@@ -131,13 +136,17 @@ h5,
 }
 
 .form-control {
-    border-radius: 8px;
-    font-size: 15px;
+    border-radius: 4px;
+    font-size: 13px;
+    padding: 10px 15px;
+    border-color: #eff7fa;
+
 }
 
 .form-control.form-control-lg {
     font-size: 17px;
     min-height: 55px;
+    border-radius: 8px;
 }
 
 .btn-primary {
@@ -163,6 +172,20 @@ h5,
     background-color: #00b9ff !important;
 }
 
+.bg-priamry {
+    background-color: #00b9ff !important;
+}
+
+.text-dark {
+    color: rgb(9 37 64) !important;
+}
+
+.bg-light,
+.text-bg-light {
+    background-color: #eff7fa !important;
+}
+
+
 .formGroup {
     margin-bottom: 15px;
 }
@@ -178,7 +201,18 @@ h5,
 
 header {
     padding: 10px 0;
-    border-bottom: 1px solid #e9edf8;
+    box-shadow: rgb(239 247 250) 2px 1px 3px 0px, rgb(239 247 250) 1px 1px 2px 0px;
+}
+
+footer {
+    padding: 20px 0;
+    border-top: solid 1px #eff7fa;
+    margin-top: 30px;
+
+}
+
+footer p {
+    font-size: 12px;
 }
 
 
@@ -187,8 +221,8 @@ header {
 }
 
 .container-fluid {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .dropdown-menu {
@@ -206,27 +240,35 @@ header {
     padding: 7px 15px;
 }
 
+.material-symbols-outlined.smallIcon {
+    font-size: 18px;
+}
+
 .dropdown-item .material-symbols-outlined {
     font-size: 17px;
 }
 
 .sideBar {
-    min-width: 230px;
-    border-right: 1px solid #e9edf8;
-    height: 100vh;
+    min-width: 250px;
+    box-shadow: rgb(239 247 250) 0px 1px 3px 0px, rgb(239 247 250) 0px 1px 2px 0px;
+    min-height: 100vh;
 }
 
 .sideBarHeader {
     padding: 11px 10px;
-    border-bottom: 1px solid #e9edf8;
+    box-shadow: rgb(239 247 250) 0px 1px 3px 0px, rgb(239 247 250) 0px 1px 2px 0px;
 }
+
 
 .sidebarContent {
     padding: 15px 10px;
 }
 
 .menuList {
-    margin-bottom: 20px;
+    margin-bottom: 8px;
+    box-shadow: rgb(239 247 250) 0px 1px 3px 0px, rgb(239 247 250) 0px 1px 2px 0px;
+    padding: 13px 10px 13px 15px;
+    border-radius: 4px;
 }
 
 .menuList ul {
@@ -236,14 +278,16 @@ header {
 
 .menuList.active ul {
     display: block;
+    padding-top: 10px;
 }
 
 .menuList ul li {
     border-left: 1.2px solid #eaeaf0;
     margin-left: 15px;
     position: relative;
-    font-size: 12px;
+    font-size: 11px;
 }
+
 
 .menuList ul li::before {
     content: '';
@@ -260,32 +304,90 @@ header {
 .menuList ul li a {
     display: block;
 
-    padding: 6px 10px;
+    padding: 7px 10px;
 
+}
+
+.menuList ul li.active a {
+    color: rgb(9 37 64);
+}
+.menuList ul li.active::before{
+    background-color: rgb(9 37 64);
 }
 
 .menuList h4 {
-    font-size: 13px;
+    font-size: 12px;
     color: #73879C;
     font-weight: 400;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     cursor: pointer;
     position: relative;
+    padding-right: 15px;
+    display: flex;
+    gap: 4px;
 }
-.menuList h4 .material-symbols-outlined{
+
+.menuList h4 .dropdownArrow {
     position: absolute;
     right: 0;
     top: 0;
     font-size: 18px;
 }
-.menuList h4 .material-symbols-outlined:after {
+
+.menuList h4 .dropdownArrow:after {
     content: 'expand_more';
 }
 
-.menuList.active h4 .material-symbols-outlined:after {
+.menuList h4 .headingIcon {
+    font-size: 18px;
+}
+
+.menuList.active h4 .dropdownArrow:after {
     content: 'expand_less';
 }
 
+.countBox {
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: rgb(239 247 250) 0px 1px 3px 0px, rgb(239 247 250) 0px 1px 2px 0px;
+}
+
+.cardBox {
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: rgb(239 247 250) 0px 1px 3px 0px, rgb(239 247 250) 0px 1px 2px 0px;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.cardBoxTitle {
+    margin: -20px;
+    margin-bottom: 20px;
+    padding: 15px 15px;
+}
+.cardBoxTitle.cardBoxTitleSmall {
+    padding: 8px 8px 8px 15px;
+}
+
+.table> :not(caption)>*>* {
+    border-color: #eff7fa;
+    border-right-width: var(--bs-border-width);
+    border-left-width: var(--bs-border-width);
+    color: #73879C;
+
+}
+
+.table th {
+    border-top-width: var(--bs-border-width);
+    font-weight: 600;
+}
+
+.table.smallTable {
+    font-size: 12px;
+}
+.cardBoxTitleMid{
+    width: 240px;
+}
 @media (max-width: 1199.98px) {}
 
 @media (max-width: 991.98px) {}
