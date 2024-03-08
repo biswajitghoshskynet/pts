@@ -265,6 +265,8 @@ footer p {
 
 .sidebarContent {
     padding: 15px 10px;
+    position: sticky;
+    top: 0;
 }
 
 .menuList {
