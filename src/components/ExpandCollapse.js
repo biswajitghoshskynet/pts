@@ -30,15 +30,15 @@ export default function ExpandCollapse() {
                 <div className='cardBoxTitle bg-light'>
                     <div className='d-flex align-items-center justify-content-between'>
                         <div>
-                            <div class="form-check h5 mb-0">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                <label class="form-check-label" for="flexCheckDefault">
+                            <div className="form-check h5 mb-0">
+                                <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label className="form-check-label" for="flexCheckDefault">
                                     Home
                                 </label>
                             </div>
                         </div>
                         <div>
-                            <div className='expendIcon' onClick={handleDisplay}><span class="material-symbols-outlined">{arrow}</span></div>
+                            <div className='expendIcon' onClick={handleDisplay}><span className="material-symbols-outlined">{arrow}</span></div>
                         </div>
                     </div>
                 </div>
@@ -46,25 +46,25 @@ export default function ExpandCollapse() {
                 <div className='cardBoxBody' style={style}>
                     <ul className='checkboxList'>
                         <li>
-                            <div class="form-check mb-05">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2" />
-                                <label class="form-check-label" htmlFor="flexCheckDefault2">
+                            <div className="form-check mb-05">
+                                <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault2" />
+                                <label className="form-check-label" htmlFor="flexCheckDefault2">
                                     Dashboard
                                 </label>
                             </div>
                         </li>
                         <li>
-                            <div class="form-check mb-05">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3" />
-                                <label class="form-check-label" htmlFor="flexCheckDefault3">
+                            <div className="form-check mb-05">
+                                <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault3" />
+                                <label className="form-check-label" htmlFor="flexCheckDefault3">
                                     Dashboard
                                 </label>
                             </div>
                             <ul>
                                 <li>
-                                    <div class="form-check mb-05">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3" />
-                                        <label class="form-check-label" htmlFor="flexCheckDefault3">
+                                    <div className="form-check mb-05">
+                                        <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault3" />
+                                        <label className="form-check-label" htmlFor="flexCheckDefault3">
                                             Sub
                                         </label>
                                     </div>
@@ -72,9 +72,9 @@ export default function ExpandCollapse() {
                             </ul>
                         </li>
                         <li>
-                            <div class="form-check mb-05">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4" />
-                                <label class="form-check-label" htmlFor="flexCheckDefault4">
+                            <div className="form-check mb-05">
+                                <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault4" />
+                                <label className="form-check-label" htmlFor="flexCheckDefault4">
                                     Dashboard
                                 </label>
                             </div>

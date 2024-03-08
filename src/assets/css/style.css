@@ -139,8 +139,11 @@ h6,
     border-radius: 4px;
     font-size: 13px;
     padding: 10px 15px;
-    border-color: #eff7fa;
+    border-color: #dce9ee;
 
+}
+.col-form-label{
+    font-weight: 500;
 }
 
 .form-control.form-control-lg {

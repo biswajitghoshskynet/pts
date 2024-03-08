@@ -5,7 +5,7 @@ export default function Page() {
     return (
         <>
             <div className='cardBox'>
-                <div className="cardBoxTitle cardBoxTitleSmall bg-light">
+                <div className="cardBoxTitle bg-light">
                     <div className='d-flex align-items-center justify-content-between'>
                         <div><h6 className="fw-semibold mb-0">Company Listing</h6></div>
                     </div>

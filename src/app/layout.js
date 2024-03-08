@@ -4,6 +4,7 @@ import "@/assets/css/bootstrap.css"
 import "@/assets/css/style.css"
 import "@/assets/css/google-icons.css"
 import Layoutauth from "@/utils/Layoutauth";
+import NextTopLoader from "nextjs-toploader";
 
 
 const poppins = Poppins({
@@ -19,14 +20,14 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  
+
 
   return (
     <html lang="en">
       <body className={poppins.className}>
-        
-       <Layoutauth data={children}/>
-      
+        <NextTopLoader  color="#00b9ff" height={2}  showSpinner={false} />
+        <Layoutauth data={children} />
+
       </body>
     </html>
   );
