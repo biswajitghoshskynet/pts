@@ -192,7 +192,7 @@ export default function Page() {
                                     <option value="Congo, Republic of the">Congo, Republic of the</option>
                                     <option value="Cook Islands">Cook Islands</option>
                                     <option value="Costa Rica">Costa Rica</option>
-                                    <option value="Cote d'Ivoire">Cote d'Ivoire</option>
+                                    <option value="Cote dIvoire">Cote d'Ivoire</option>
                                     <option value="Croatia">Croatia</option>
                                     <option value="Cuba">Cuba</option>
                                     <option value="Cyprus">Cyprus</option>
