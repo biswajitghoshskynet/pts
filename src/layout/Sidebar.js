@@ -75,89 +75,89 @@ export default function Sidebar() {
               <ul>
                 <li className={`${pathname === '/menu' ? 'active' : ''}`}><Link href="/menu">Menu Listing</Link> </li>
                 <li className={`${pathname === '/menu/role' ? 'active' : ''}`}><Link href="/menu/role">Role Listing</Link> </li>
-                <li><Link href="">Menu Role Assign</Link> </li>
-                <li><Link href="">Menu User Assign</Link> </li>
+                <li className={`${pathname === '/menu/menurole' ? 'active' : ''}`}><Link href="/menu/menurole">Menu Role Assign</Link> </li>
+                <li className={`${pathname === '/menu/menuuser' ? 'active' : ''}`}><Link href="/menu/menuuser">Menu User Assign</Link> </li>
               </ul>
             </div>
 
             <div className='menuList'>
               <h4 onClick={handleDropdown}><span className="material-symbols-outlined headingIcon">settings_account_box</span> Master Management <span className="material-symbols-outlined dropdownArrow"></span></h4>
               <ul>
-                <li><Link href="">Ethnicity</Link> </li>
-                <li><Link href="">Profession</Link> </li>
-                <li><Link href="">Referral Source</Link> </li>
-                <li><Link href="">Referral Outcome</Link> </li>
-                <li><Link href="">Referral Reasons</Link> </li>
-                <li><Link href="">Diagnosis</Link></li>
-                <li><Link href="">Medication</Link></li>
-                <li><Link href="">Questionnaire</Link></li>
-                <li><Link href="">RCADS Points</Link></li>
-                <li><Link href="">EDE-Q Scoring Logic</Link></li>
-                <li><Link href="">Template</Link></li>
-                <li><Link href="">Patient Notes Types</Link></li>
-                <li><Link href="">Discharge Reasons</Link></li>
-                <li><Link href="">Location Management</Link></li>
-                <li><Link href="">Room Management</Link></li>
-                <li><Link href="">App Type Management</Link></li>
-                <li><Link href="">Urgency Management</Link></li>
-                <li><Link href="">Referrer Details</Link></li>
-                <li><Link href="">Legal Form</Link></li>
-                <li><Link href="">Documentation</Link></li>
-                <li><Link href="">LMS</Link></li>
-                <li><Link href="">LMS BP</Link></li>
+                <li className={`${pathname === '/masters/ethnicity' ? 'active' : ''}`}><Link href="/masters/ethnicity">Ethnicity</Link> </li>
+                <li className={`${pathname === '/masters/profession' ? 'active' : ''}`}><Link href="/masters/profession">Profession</Link> </li>
+                <li className={`${pathname === '/masters/reffsource' ? 'active' : ''}`}><Link href="/masters/reffsource">Referral Source</Link> </li>
+                <li className={`${pathname === '/masters/reffoutcome' ? 'active' : ''}`}><Link href="/masters/reffoutcome">Referral Outcome</Link> </li>
+                <li className={`${pathname === '/masters/reffreasons' ? 'active' : ''}`}><Link href="/masters/reffreasons">Referral Reasons</Link> </li>
+                <li className={`${pathname === '/masters/diagnosis' ? 'active' : ''}`}><Link href="/masters/diagnosis">Diagnosis</Link></li>
+                <li className={`${pathname === '/masters/medication' ? 'active' : ''}`}><Link href="/masters/medication">Medication</Link></li>
+                <li className={`${pathname === '/masters/questioner' ? 'active' : ''}`}><Link href="/masters/questioner">Questionnaire</Link></li>
+                <li className={`${pathname === '/masters/rcadspoint' ? 'active' : ''}`}><Link href="/masters/rcadspoint">RCADS Points</Link></li>
+                <li className={`${pathname === '/masters/edeqlogic' ? 'active' : ''}`}><Link href="/masters/edeqlogic">EDE-Q Scoring Logic</Link></li>
+                <li className={`${pathname === '/masters/template' ? 'active' : ''}`}><Link href="/masters/template">Template</Link></li>
+                <li className={`${pathname === '/masters/patientnotestypes' ? 'active' : ''}`}><Link href="/masters/patientnotestypes">Patient Notes Types</Link></li>
+                <li className={`${pathname === '/masters/dischargereasons' ? 'active' : ''}`}><Link href="/masters/dischargereasons">Discharge Reasons</Link></li>
+                <li className={`${pathname === '/masters/location' ? 'active' : ''}`}><Link href="/masters/location">Location Management</Link></li>
+                <li className={`${pathname === '/masters/room' ? 'active' : ''}`}><Link href="/masters/room">Room Management</Link></li>
+                <li className={`${pathname === '/masters/apptype' ? 'active' : ''}`}><Link href="/masters/apptype">App Type Management</Link></li>
+                <li className={`${pathname === '/masters/urgency' ? 'active' : ''}`}><Link href="/masters/urgency">Urgency Management</Link></li>
+                <li className={`${pathname === '/masters/refferrer' ? 'active' : ''}`}><Link href="/masters/refferrer">Referrer Details</Link></li>
+                <li className={`${pathname === '/masters/legalform' ? 'active' : ''}`}><Link href="/masters/legalform">Legal Form</Link></li>
+                <li className={`${pathname === '/masters/documentation' ? 'active' : ''}`}><Link href="/masters/documentation">Documentation</Link></li>
+                <li className={`${pathname === '/masters/lms' ? 'active' : ''}`}><Link href="/masters/lms">LMS</Link></li>
+                <li className={`${pathname === '/masters/lmsbp' ? 'active' : ''}`}><Link href="/masters/lmsbp">LMS BP</Link></li>
               </ul>
             </div>
 
             <div className='menuList'>
               <h4 onClick={handleDropdown}><span className="material-symbols-outlined headingIcon">manage_accounts</span> User Management <span className="material-symbols-outlined dropdownArrow"></span></h4>
               <ul>
-                <li><Link href="">Create Team</Link></li>
-                <li><Link href="">Company Listing</Link></li>
-                <li><Link href="">Team Listing</Link></li>
-                <li><Link href="">Create User</Link></li>
-                <li><Link href="">User Listing</Link></li>
+                <li className={`${pathname === '/user/teamadd' ? 'active' : ''}`}><Link href="/user/teamadd">Create Team</Link></li>
+                <li className={`${pathname === '/user/companylist' ? 'active' : ''}`}><Link href="/user/companylist">Company Listing</Link></li>
+                <li className={`${pathname === '/user/team' ? 'active' : ''}`}><Link href="/user/team">Team Listing</Link></li>
+                <li className={`${pathname === '/user/useradd' ? 'active' : ''}`}><Link href="/user/useradd">Create User</Link></li>
+                <li className={`${pathname === '/user' ? 'active' : ''}`}><Link href="/user">User Listing</Link></li>
               </ul>
             </div>
 
             <div className='menuList'>
               <h4 onClick={handleDropdown}><span className="material-symbols-outlined headingIcon">personal_injury</span> Patient Management <span className="material-symbols-outlined dropdownArrow"></span></h4>
               <ul>
-                <li><Link href="">Quick Registration</Link></li>
-                <li><Link href="">Register Patient</Link></li>
-                <li><Link href="">Patient Listing</Link></li>
+                <li className={`${pathname === '/patient/patientaddquick' ? 'active' : ''}`}><Link href="/patient/patientaddquick">Quick Registration</Link></li>
+                <li className={`${pathname === '/patient/patientadd' ? 'active' : ''}`}><Link href="/patient/patientadd">Register Patient</Link></li>
+                <li className={`${pathname === '/patient' ? 'active' : ''}`}><Link href="/patient">Patient Listing</Link></li>
               </ul>
             </div>
 
             <div className='menuList'>
               <h4 onClick={handleDropdown}><span className="material-symbols-outlined headingIcon">pending_actions</span> Appointment Management <span className="material-symbols-outlined dropdownArrow"></span></h4>
               <ul>
-                <li><Link href="">Add Appointment</Link> </li>
-                <li><Link href="">Appointment Listing</Link> </li>
-                <li><Link href="">Appointment History</Link> </li>
-                <li><Link href="">Appointment Cancelled</Link> </li>
-                <li><Link href="">Calendar</Link> </li>
+                <li className={`${pathname === '/appointment/addapp' ? 'active' : ''}`}><Link href="/appointment/addapp">Add Appointment</Link> </li>
+                <li className={`${pathname === '/appointment' ? 'active' : ''}`}><Link href="/appointment">Appointment Listing</Link> </li>
+                <li className={`${pathname === '/appointment/apphistory' ? 'active' : ''}`}><Link href="/appointment/apphistory">Appointment History</Link> </li>
+                <li className={`${pathname === '/appointment/canceled' ? 'active' : ''}`}><Link href="/appointment/canceled">Appointment Cancelled</Link> </li>
+                <li className={`${pathname === '/calendar' ? 'active' : ''}`}><Link href="/calendar">Calendar</Link> </li>
               </ul>
             </div>
 
             <div className='menuList'>
               <h4 onClick={handleDropdown}><span className="material-symbols-outlined headingIcon">assignment_ind</span> Assign Patient <span className="material-symbols-outlined dropdownArrow"></span></h4>
               <ul>
-                <li><Link href="">Assign Patient To Clinician</Link> </li>
-                <li><Link href="">Assign Listing</Link> </li>
+                <li className={`${pathname === '/patient/assignadd' ? 'active' : ''}`}><Link href="/patient/assignadd">Assign Patient To Clinician</Link> </li>
+                <li className={`${pathname === '/patient/assign' ? 'active' : ''}`}><Link href="/patient/assign">Assign Listing</Link> </li>
               </ul>
             </div>
 
             <div className='menuList'>
               <h4 onClick={handleDropdown}><span className="material-symbols-outlined headingIcon">history_edu</span> Site Log <span className="material-symbols-outlined dropdownArrow"></span></h4>
               <ul>
-                <li><Link href="">View Log</Link> </li>
+                <li className={`${pathname === '/log' ? 'active' : ''}`}><Link href="/log">View Log</Link> </li>
               </ul>
             </div>
 
             <div className='menuList'>
               <h4 onClick={handleDropdown}><span className="material-symbols-outlined headingIcon">lab_profile</span> Reports <span className="material-symbols-outlined dropdownArrow"></span></h4>
               <ul>
-                <li><Link href="">Manage Reports</Link> </li>
+                <li className={`${pathname === '/reports' ? 'active' : ''}`}><Link href="/reports">Manage Reports</Link> </li>
                 <li><Link href="">Team Wise</Link> </li>
                 <li><Link href="">Clinician Wise</Link> </li>
                 <li><Link href="">Activity data Team Wise</Link> </li>
@@ -169,9 +169,9 @@ export default function Sidebar() {
             <div className='menuList'>
               <h4 onClick={handleDropdown}><span className="material-symbols-outlined headingIcon">settings</span> Site Management <span className="material-symbols-outlined dropdownArrow"></span></h4>
               <ul>
-                <li><Link href="">Ignore Functions</Link> </li>
-                <li><Link href="">Subscriptions</Link> </li>
-                <li><Link href="">PayPal</Link> </li>
+                <li className={`${pathname === '/sitemanage/igfunction' ? 'active' : ''}`}><Link href="/sitemanage/igfunction">Ignore Functions</Link> </li>
+                <li className={`${pathname === '/sitemanage/subscription' ? 'active' : ''}`}><Link href="/sitemanage/subscription">Subscriptions</Link> </li>
+                <li className={`${pathname === '/paypal' ? 'active' : ''}`}><Link href="/paypal">PayPal</Link> </li>
               </ul>
             </div>
 

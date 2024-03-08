@@ -311,7 +311,8 @@ footer p {
 .menuList ul li.active a {
     color: rgb(9 37 64);
 }
-.menuList ul li.active::before{
+
+.menuList ul li.active::before {
     background-color: rgb(9 37 64);
 }
 
@@ -354,19 +355,24 @@ footer p {
 
 .cardBox {
     border-radius: 4px;
-    padding: 20px;
+
     box-shadow: rgb(239 247 250) 0px 1px 3px 0px, rgb(239 247 250) 0px 1px 2px 0px;
-    min-height: 100%;
+   
     overflow: hidden;
 }
 
 .cardBoxTitle {
-    margin: -20px;
-    margin-bottom: 20px;
+   
+   
     padding: 15px 15px;
 }
+
 .cardBoxTitle.cardBoxTitleSmall {
     padding: 8px 8px 8px 15px;
+}
+
+.cardBoxBody {
+    padding: 20px;
 }
 
 .table> :not(caption)>*>* {
@@ -385,9 +391,23 @@ footer p {
 .table.smallTable {
     font-size: 12px;
 }
-.cardBoxTitleMid{
+
+.cardBoxTitleMid {
     width: 240px;
 }
+
+.form-check label {
+    vertical-align: middle;
+}
+
+.expendIcon {
+    cursor: pointer;
+}
+.checkboxList li ul{
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+
 @media (max-width: 1199.98px) {}
 
 @media (max-width: 991.98px) {}

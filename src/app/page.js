@@ -50,29 +50,31 @@ export default function Home() {
             <div className="cardBoxTitle bg-light">
               <h6 className="fw-semibold mb-0">My Team Caseloads</h6>
             </div>
+            <div className="cardBoxBody">
+              <table className="table mb-0 smallTable">
+                <thead>
+                  <tr>
+                    <th>Team</th>
+                    <th>No Of Patients</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Tiger</td>
+                    <td>30</td>
+                  </tr>
+                  <tr>
+                    <td>Tiger</td>
+                    <td>30</td>
+                  </tr>
+                  <tr>
+                    <td>Tiger</td>
+                    <td>30</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
 
-            <table className="table mb-0 smallTable">
-              <thead>
-                <tr>
-                  <th>Team</th>
-                  <th>No Of Patients</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Tiger</td>
-                  <td>30</td>
-                </tr>
-                <tr>
-                  <td>Tiger</td>
-                  <td>30</td>
-                </tr>
-                <tr>
-                  <td>Tiger</td>
-                  <td>30</td>
-                </tr>
-              </tbody>
-            </table>
           </div>
         </div>
 
@@ -81,28 +83,31 @@ export default function Home() {
             <div className="cardBoxTitle bg-light">
               <h6 className="fw-semibold mb-0">My Caseloads</h6>
             </div>
-            <table className="table mb-0 smallTable">
-              <thead>
-                <tr>
-                  <th>Team</th>
-                  <th>No Of Patients</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Tiger</td>
-                  <td>30</td>
-                </tr>
-                <tr>
-                  <td>Tiger</td>
-                  <td>30</td>
-                </tr>
-                <tr>
-                  <td>Tiger</td>
-                  <td>30</td>
-                </tr>
-              </tbody>
-            </table>
+            <div className="cardBoxBody">
+              <table className="table mb-0 smallTable">
+                <thead>
+                  <tr>
+                    <th>Team</th>
+                    <th>No Of Patients</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Tiger</td>
+                    <td>30</td>
+                  </tr>
+                  <tr>
+                    <td>Tiger</td>
+                    <td>30</td>
+                  </tr>
+                  <tr>
+                    <td>Tiger</td>
+                    <td>30</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
           </div>
         </div>
 
@@ -111,28 +116,31 @@ export default function Home() {
             <div className="cardBoxTitle bg-light">
               <h6 className="fw-semibold mb-0">Upcoming Appointments</h6>
             </div>
-            <table className="table mb-0 smallTable">
-              <thead>
-                <tr>
-                  <th>Date</th>
-                  <th>Appoinment</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>06/3/2024</td>
-                  <td>872382bsdksdj</td>
-                </tr>
-                <tr>
-                  <td>06/3/2024</td>
-                  <td>872382bsdksdj</td>
-                </tr>
-                <tr>
-                  <td>06/3/2024</td>
-                  <td>872382bsdksdj</td>
-                </tr>
-              </tbody>
-            </table>
+            <div className="cardBoxBody">
+              <table className="table mb-0 smallTable">
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Appoinment</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>06/3/2024</td>
+                    <td>872382bsdksdj</td>
+                  </tr>
+                  <tr>
+                    <td>06/3/2024</td>
+                    <td>872382bsdksdj</td>
+                  </tr>
+                  <tr>
+                    <td>06/3/2024</td>
+                    <td>872382bsdksdj</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
           </div>
         </div>
 
@@ -141,32 +149,45 @@ export default function Home() {
             <div className="cardBoxTitle bg-light">
               <h6 className="fw-semibold mb-0">Reminder</h6>
             </div>
-            <table className="table mb-0 smallTable mb-2">
-              <thead>
-                <tr>
-                  <th>Reminder</th>
-                  <th width='30' className="text-center">Delete</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Tiger</td>
-                  <td className="text-center"><span className="material-symbols-outlined smallIcon text-danger">delete_forever</span></td>
-                </tr>
-              </tbody>
-            </table>
-            <form>
-              <div className="mb-1"><input type="text" id="reminder" name="reminder" className="form-control" placeholder="Enter Reminders" /></div>
-              <div className="d-grid"><button type="submit" className="btn btn-sm btn-light">Add</button></div>
-            </form>
+            <div className="cardBoxBody">
+              <table className="table mb-0 smallTable mb-2">
+                <thead>
+                  <tr>
+                    <th>Reminder</th>
+                    <th width='30' className="text-center">Delete</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Tiger</td>
+                    <td className="text-center"><span className="material-symbols-outlined smallIcon text-danger">delete_forever</span></td>
+                  </tr>
+                </tbody>
+              </table>
+              <form>
+                <div className="mb-1"><input type="text" id="reminder" name="reminder" className="form-control" placeholder="Enter Reminders" /></div>
+                <div className="d-grid"><button type="submit" className="btn btn-sm btn-light">Add</button></div>
+              </form>
+            </div>
+
 
           </div>
         </div>
       </div>
 
-      <div className="cardBox">
-        <Datatable title='Patient Listing' />
+      <div className='cardBox'>
+        <div className="cardBoxTitle cardBoxTitleSmall bg-light">
+          <div className='d-flex align-items-center justify-content-between'>
+            <div><h6 className="fw-semibold mb-0">Patient Listing</h6></div>
+          </div>
+        </div>
+
+        <div className='cardBoxBody'>
+          <Datatable />
+        </div>
+
       </div>
+     
 
 
     </main>

@@ -21,7 +21,7 @@ export default function Page() {
                         </div>
                     </div>
                 </div>
-                <div>
+                <div className="cardBoxBody">
 
                     <table className='table'>
                         <thead>
