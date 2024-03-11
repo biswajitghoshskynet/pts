@@ -490,7 +490,7 @@ export default function Page() {
                                             <option value="Australia/North">(GMT+9:30) Australia/North (Central Standard Time (Northern Territory))</option>
                                             <option value="Australia/South">(GMT+9:30) Australia/South (Central Standard Time (South Australia))</option>
                                             <option value="Australia/Yancowinna">(GMT+9:30) Australia/Yancowinna (Central Standard Time (South Australia/New South Wales))</option>
-                                            <option value="Antarctica/DumontDUrville">(GMT+10:00) Antarctica/DumontDUrville (Dumont-d'Urville Time)</option>
+                                            <option value="Antarctica/DumontDUrville">(GMT+10:00) Antarctica/DumontDUrville (Dumont-d&apos;Urville Time)</option>
                                             <option value="Asia/Sakhalin">(GMT+10:00) Asia/Sakhalin (Sakhalin Time)</option>
                                             <option value="Asia/Vladivostok">(GMT+10:00) Asia/Vladivostok (Vladivostok Time)</option>
                                             <option value="Australia/ACT">(GMT+10:00) Australia/ACT (Eastern Standard Time (New South Wales))</option>
