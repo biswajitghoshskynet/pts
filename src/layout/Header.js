@@ -56,10 +56,10 @@ export default function Header() {
                       <span className="material-symbols-outlined">account_circle</span> System Administrator <span className="material-symbols-outlined">expand_more</span>
                     </button>
                     <ul className="dropdown-menu" id='userDropdown' style={style}>
-                      <li><Link className="dropdown-item" href="#"><span className="material-symbols-outlined">manage_accounts</span> Profile</Link></li>
-                      <li><Link className="dropdown-item" href="#"><span className="material-symbols-outlined">widgets</span> Change Company</Link></li>
+                      <li><Link className="dropdown-item" href="/user/profile"><span className="material-symbols-outlined">manage_accounts</span> Profile</Link></li>
+                      <li><Link className="dropdown-item" href="/user/changecompany"><span className="material-symbols-outlined">widgets</span> Change Company</Link></li>
                       <li><hr className="dropdown-divider"/></li>
-                      <li><Link className="dropdown-item" href="#"><span className="material-symbols-outlined">power_settings_new</span> Logout</Link></li>
+                      <li><Link className="dropdown-item" href="#"><span className="material-symbols-outlined text-danger">power_settings_new</span> Logout</Link></li>
                     </ul>
                   </div>
                 </li>

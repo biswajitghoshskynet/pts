@@ -76,7 +76,11 @@ h6,
 .h6 {
     font-size: 14px;
 }
-
+hr {
+    margin: 40px 0 50px 0;
+    opacity: 0.8;
+    border-color: #dce9ee;
+}
 .mb-05 {
     margin-bottom: 5px !important;
 }
@@ -412,7 +416,19 @@ footer p {
     padding-left: 15px;
     padding-bottom: 5px;
 }
-
+.profilePic{
+    
+}
+.profilePic img{
+    border-radius: 50%;
+  
+}
+.fileUploadField{
+    visibility: hidden;
+}
+.fullHeight{
+    height: 100%;
+}
 @media (max-width: 1199.98px) {}
 
 @media (max-width: 991.98px) {}
