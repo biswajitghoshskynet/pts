@@ -166,7 +166,7 @@ export default function Home() {
               </table>
               <form>
                 <div className="mb-1"><input type="text" id="reminder" name="reminder" className="form-control" placeholder="Enter Reminders" /></div>
-                <div className="d-grid"><button type="submit" className="btn btn-sm btn-light">Add</button></div>
+                <div className="d-grid"><button type="submit" className="btn btn-sm btn-dark">Add</button></div>
               </form>
             </div>
 

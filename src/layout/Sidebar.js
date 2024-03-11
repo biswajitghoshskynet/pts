@@ -47,8 +47,9 @@ export default function Sidebar() {
             <div className='d-flex gap-2 align-items-center'>
               <div>
                 <Image
-                  src="/img/logo.png"
+                  src="/img/placeholder.jpg"
                   width={55}
+                  class="rounded-circle"
                   height={55}
                   alt="logo"
                 />
