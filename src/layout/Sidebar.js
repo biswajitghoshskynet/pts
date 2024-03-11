@@ -30,18 +30,24 @@ export default function Sidebar() {
     menuList.forEach((item) => {
       item.classList = 'menuList'
     })
-    parent.className = 'menuList active'
+    if (parent.classList == 'menuList') {
+      parent.classList = 'menuList active'
+    }
+    else {
+      parent.classList = 'menuList'
+    }
+
   }
 
 
   return (
     <>
       <div className='sideBarHold'>
-      <div className='sideBarToggleTrigger bg-success' onClick={handleDisplay}><span class="material-symbols-outlined">
-menu_open
-</span></div>
+        <div className='sideBarToggleTrigger bg-success' onClick={handleDisplay}><span className="material-symbols-outlined">
+          menu_open
+        </span></div>
         <div className={style} >
-          
+
 
           <div className='sideBarHeader'>
             <div className='d-flex gap-2 align-items-center'>

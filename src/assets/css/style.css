@@ -352,6 +352,7 @@ footer p {
     border-radius: 4px;
 }
 
+
 .menuList ul {
     display: none;
 
@@ -408,12 +409,17 @@ footer p {
     display: flex;
     gap: 4px;
 }
+.menuList .material-symbols-outlined {
+    z-index: -1;
+    position: relative;
+}
 
 .menuList h4 .dropdownArrow {
     position: absolute;
     right: 0;
     top: 0;
     font-size: 18px;
+    z-index: -1;
 }
 
 .menuList h4 .dropdownArrow:after {
