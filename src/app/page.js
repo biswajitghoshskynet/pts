@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main>
 
-      <div className="d-flex mb-3 text-center gap-2 justify-content-between">
+      <div className="d-flex mb-3 text-center gap-2 justify-content-between flex-wrap flex-md-nowrap">
         <div className="countBox flex-fill">
           <p className="mb-0"><span className="material-symbols-outlined smallIcon">person</span>Total Users</p>
           <h4 className="h1 mb-0 text-dark">26</h4>
@@ -45,7 +45,7 @@ export default function Home() {
 
 
       <div className="row mb-3 gx-2 align-items-stretch">
-        <div className="col-md-6 col-lg-3">
+        <div className="col-md-6 col-lg-3 mb-1">
           <div className="cardBox">
             <div className="cardBoxTitle bg-light">
               <h6 className="fw-semibold mb-0">My Team Caseloads</h6>
@@ -78,7 +78,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="col-md-6 col-lg-3">
+        <div className="col-md-6 col-lg-3 mb-1">
           <div className="cardBox">
             <div className="cardBoxTitle bg-light">
               <h6 className="fw-semibold mb-0">My Caseloads</h6>
@@ -111,7 +111,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="col-md-6 col-lg-3">
+        <div className="col-md-6 col-lg-3  mb-1">
           <div className="cardBox">
             <div className="cardBoxTitle bg-light">
               <h6 className="fw-semibold mb-0">Upcoming Appointments</h6>
@@ -144,7 +144,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="col-md-6 col-lg-3">
+        <div className="col-md-6 col-lg-3  mb-1">
           <div className="cardBox">
             <div className="cardBoxTitle bg-light">
               <h6 className="fw-semibold mb-0">Reminder</h6>

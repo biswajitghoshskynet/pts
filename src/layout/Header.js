@@ -30,7 +30,7 @@ export default function Header() {
         <div className='container-fluid'>
           <div className='d-flex justify-content-between align-items-center'>
             <div className='headerLeft d-flex gap-2 align-items-center'>
-              <div className='headerTitle h4 mb-0'>Admin Dashboard</div>
+              <div className='headerTitle h4 mb-0 d-none d-md-inline-block'>Admin Dashboard</div>
               <div className='loginId'><span className="badge text-bg-light">Login ID : 1460107781</span></div>
             </div>
             <div className='headerRight'>
@@ -53,7 +53,7 @@ export default function Header() {
                 <li>
                   <div className="dropdown">
                     <button className="btn btn-primary btn-sm text-capitalize fw-medium" type="button" onClick={handleDropdown}>
-                      <span className="material-symbols-outlined">account_circle</span> System Administrator <span className="material-symbols-outlined">expand_more</span>
+                      <span className="material-symbols-outlined">account_circle</span> <span className='headerBtnText d-none d-md-inline-block'>System Administrator</span> <span className="material-symbols-outlined">expand_more</span>
                     </button>
                     <ul className="dropdown-menu" id='userDropdown' style={style}>
                       <li><Link className="dropdown-item" href="/user/profile"><span className="material-symbols-outlined">manage_accounts</span> Profile</Link></li>
