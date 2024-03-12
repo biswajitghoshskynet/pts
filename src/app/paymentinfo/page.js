@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import Datatable from '@/components/Datatable'
 
@@ -13,7 +15,7 @@ export default function Page() {
                 </div>
 
                 <div className='cardBoxBody'>
-                    <Datatable />
+                    {/* <Datatable /> */}
                 </div>
 
             </div>

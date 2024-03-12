@@ -1,32 +1,36 @@
 
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 
 
 export default function Header() {
   const [dropdownShow, setDropdownShow] = useState(false)
-  const [style, setStyle] =useState({ display: 'none'})
+  const [style, setStyle] = useState({ display: 'none' })
 
-  const handleDropdown = () => {
+ 
+ 
+
+  const handleDropdown = (e) => {
     const dropdown = document.querySelector('#userDropdown')
-   
+    console.log(e.target.id);
+
+
     if (dropdownShow === false) {
       setDropdownShow(true)
-      setStyle({display: 'block'})
-      
+      setStyle({ display: 'block' })
+
     }
     else {
       setDropdownShow(false)
-      setStyle({display: 'none'})
+      setStyle({ display: 'none' })
     };
-
-
-
   }
+
+
 
   return (
     <>
-      <header>
+      <div className='header'>
         <div className='container-fluid'>
           <div className='d-flex justify-content-between align-items-center'>
             <div className='headerLeft d-flex gap-2 align-items-center'>
@@ -52,13 +56,13 @@ export default function Header() {
                 </li>
                 <li>
                   <div className="dropdown">
-                    <button className="btn btn-primary btn-sm text-capitalize fw-medium" type="button" onClick={handleDropdown}>
+                    <button className="btn btn-primary btn-sm text-capitalize fw-medium" id='HeaderBtn' type="button" onClick={handleDropdown}>
                       <span className="material-symbols-outlined">account_circle</span> <span className='headerBtnText d-none d-md-inline-block'>System Administrator</span> <span className="material-symbols-outlined">expand_more</span>
                     </button>
                     <ul className="dropdown-menu" id='userDropdown' style={style}>
                       <li><Link className="dropdown-item" href="/user/profile"><span className="material-symbols-outlined">manage_accounts</span> Profile</Link></li>
                       <li><Link className="dropdown-item" href="/user/changecompany"><span className="material-symbols-outlined">widgets</span> Change Company</Link></li>
-                      <li><hr className="dropdown-divider"/></li>
+                      <li><hr className="dropdown-divider" /></li>
                       <li><Link className="dropdown-item" href="#"><span className="material-symbols-outlined text-danger">power_settings_new</span> Logout</Link></li>
                     </ul>
                   </div>
@@ -67,7 +71,7 @@ export default function Header() {
             </div>
           </div>
         </div>
-      </header>
+      </div>
     </>
   )
 }
