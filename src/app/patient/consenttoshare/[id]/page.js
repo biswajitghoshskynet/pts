@@ -71,11 +71,11 @@ export default function Page() {
                                         <div className="col-sm-7">
                                             <div className="form-check form-check-inline">
                                                 <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
-                                                <label className="form-check-label" for="inlineRadio1">Yes</label>
+                                                <label className="form-check-label" htmlFor="inlineRadio1">Yes</label>
                                             </div>
                                             <div className="form-check form-check-inline">
                                                 <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
-                                                <label className="form-check-label" for="inlineRadio2">No</label>
+                                                <label className="form-check-label" htmlFor="inlineRadio2">No</label>
                                             </div>
                                         </div>
                                     </div>
@@ -84,15 +84,15 @@ export default function Page() {
                                         <div className="col-sm-10">
                                             <div className="form-check form-check-inline">
                                                 <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option1" />
-                                                <label className="form-check-label" for="inlineRadio3">Consent to share without restrictions</label>
+                                                <label className="form-check-label" htmlFor="inlineRadio3">Consent to share without restrictions</label>
                                             </div>
                                             <div className="form-check form-check-inline">
                                                 <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option2" />
-                                                <label className="form-check-label" for="inlineRadio4">Consent to share with some restrictions</label>
+                                                <label className="form-check-label" htmlFor="inlineRadio4">Consent to share with some restrictions</label>
                                             </div>
                                             <div className="form-check form-check-inline">
                                                 <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option2" />
-                                                <label className="form-check-label" for="inlineRadio5">Consent to share withheld</label>
+                                                <label className="form-check-label" htmlFor="inlineRadio5">Consent to share withheld</label>
                                             </div>
                                         </div>
                                     </div>
@@ -115,11 +115,11 @@ export default function Page() {
                                                     <td>
                                                         <div className="form-check form-check-inline">
                                                             <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio9" value="option1" />
-                                                            <label className="form-check-label" for="inlineRadio9">Yes</label>
+                                                            <label className="form-check-label" htmlFor="inlineRadio9">Yes</label>
                                                         </div>
                                                         <div className="form-check form-check-inline">
                                                             <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio8" value="option2" />
-                                                            <label className="form-check-label" for="inlineRadio8">No</label>
+                                                            <label className="form-check-label" htmlFor="inlineRadio8">No</label>
                                                         </div>
                                                     </td>
                                                     <td><button type='button'><span className="material-symbols-outlined">library_add</span></button></td>
